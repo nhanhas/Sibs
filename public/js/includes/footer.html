@@ -1,0 +1,73 @@
+<p class="background_text" target-anim="animations.obj_footer" anim-on-scroll>{{ 'comercial.principal.section5_background' | translate }}</p>
+<div id="carousel-testimonials" class="carousel slide" data-ride="carousel" factor-number="0.6" resize-height>
+
+    <!-- Left and right controls -->
+	<div class="arrow_controls_generic">
+		<a class="left carousel-control" href="#carousel-testimonials" data-slide="prev" target="_self">
+		    <div class="slide_buttons slide_left hvr-sweep-to-top" ng-mouseover="itemsrcslideleft = 'public/images/left_slide_hover.png'" ng-mouseout="itemsrcslideleft='public/images/left_slide.png'"><img ng-src="{{itemsrcslideleft}}"></div>
+		</a>
+		<a class="right carousel-control" href="#carousel-testimonials" data-slide="next" target="_self">
+		    <div class="slide_buttons slide_right hvr-sweep-to-top" ng-mouseover="itemsrcslideright = 'public/images/right_slide_hover.png'" ng-mouseout="itemsrcslideright='public/images/right_slide.png'"><img ng-src="{{itemsrcslideright}}"></div>
+		</a>
+	</div>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner top-slider slide_wrapper_container">
+        <div class="item active slide_wrapper">
+        	<div class="section_container">
+				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
+				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
+				<p class="signature">Roberto Marques |  Jornal Expresso</p>
+			</div>
+        </div>
+        <div class="item slide_wrapper">
+        	<div class="section_container">
+				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
+				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
+				<p class="signature">Roberto Marques |  Jornal Expresso</p>
+			</div>
+        </div>
+        <div class="item slide_wrapper">
+        	<div class="section_container">
+				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
+				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
+				<p class="signature">Roberto Marques |  Jornal Expresso</p>
+			</div>
+        </div>
+        <div class="item slide_wrapper">
+        	<div class="section_container">
+				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
+				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
+				<p class="signature">Roberto Marques |  Jornal Expresso</p>
+			</div>
+        </div>
+        <div class="item slide_wrapper">
+        	<div class="section_container">
+				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
+				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
+				<p class="signature">Roberto Marques |  Jornal Expresso</p>
+			</div>
+        </div>
+	</div>
+</div>
+<div class="footer" factor-number="0.4" resize-height>
+	<div class="logo_section"><img id="logo_section" src="public/images/logo_section.png"></div>
+	<div class="row social_container no_margin">
+		<div class="col-xs-6 logo_twitter">
+			<div id="logo_twitter" class="footer_logos hvr-sweep-to-top" ng-mouseover="itemsrctwitter = 'public/images/twitter_logo_hover.png'" ng-mouseout="itemsrctwitter='public/images/twitter_logo.png'"><img ng-src="{{itemsrctwitter}}"></div>
+		</div>
+		<div class="col-xs-6 logo_youtube">
+			<div id="logo_youtube" class="footer_logos hvr-sweep-to-top" ng-mouseover="itemsrcyoutube = 'public/images/youtube_logo_hover.png'" ng-mouseout="itemsrcyoutube='public/images/youtube_logo.png'"><img ng-src="{{itemsrcyoutube}}"></div>
+		</div>
+	</div>
+	<div class="row no_margin">
+		<div class="col-xs-12 links_footer">
+			<a href="">{{ 'general.footer.access' | translate }}</a>
+			<a href="">{{ 'general.footer.private' | translate }}</a>
+			<a href="">{{ 'general.footer.faq' | translate }}</a>
+			<a href="" ng-click="toSection('section_contacts' , $event)">{{ 'general.footer.contacts' | translate }}</a>
+			<div id="up_button" ng-click="toTheTop()" class="footer_logos hvr-sweep-to-top" ng-mouseover="itemsrcupbutton = 'public/images/up_button_hover.png'" ng-mouseout="itemsrcupbutton='public/images/up_button.png'"><img ng-src="{{itemsrcupbutton}}"></div>
+		</div>
+	</div>
+	<p class="author">©SIBS 2018</p>
+</div>

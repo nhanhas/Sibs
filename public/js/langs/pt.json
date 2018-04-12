@@ -1,0 +1,53 @@
+{  
+   "welcome":{  
+      "comercial":{  
+         "header":"multi",
+         "title":"importante para o seu sucesso",
+         "subtitle":"neg\u00f3cios"
+      },
+      "consumer":{  
+         "header":"multi",
+         "title":"\u00fatil no seu dia a dia",
+         "subtitle":"particulares"
+      }
+   },
+   "comercial":{  
+      "principal":{  
+         "title_header":"Um negócio, MULTI OPÇÕES.",
+         "subtitle_header":"Uma forma de pagamento para cada momento.",
+         "text_header":"Sabe qual é o segredo do sucesso? São os parceiros. Se tiver os parceiros certos tem mais de meio caminho andado. E por parceiro certo, entenda-se, estamos a falar de alguém em quem pode confiar e que confia em si, alguém que lhe traz valor, alguém que se atualiza e adequa as suas soluções à evolução do mercado, alguém como por exemplo...ora deixa cá ver, o MULTIBANCO.",
+         "section3_background":"Serviços",
+         "section3_title":"3 serviços para o seu negócio",
+         "section3_text":"O MULTIBANCO está onde é preciso estar, com as soluções que são precisas ter. Assim, marcamos presença na sua loja com o MULTIBANCO Shop,  seguimo-lo para todo o lado com o MULTIBANCO Go e estamos no seu computador, tablet ou smartphone, através do MULTIBANCO Digital. Qual é que quer conhecer primeiro?",
+         "section4_text":"Para colocar qualquer dúvida ou aderir aos nossos serviços, preencha os campos abaixo. A parceria começa aqui.",
+         "section5_background":"Opiniões",
+         "section5_title":"Multi Opiniões",
+         "section5_text":"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”"
+      }
+   },
+   "consumer":{  
+      "principal":{  
+         "title_header":"Encontre a solução adequada para cada tipo de negócio.",
+         "subtitle_header":"Porque o seu negócio é único.",
+         "temp":"Página em construção."
+      }
+   },
+   "sidebar":{
+      "linkZero":"Home",
+      "linkOne":"MULTIBANCO Shop",
+      "linkTwo":"MULTIBANCO Go",
+      "linkThree":"MULTIBANCO Digital",
+      "linkFour":"Contacte-nos"
+   },
+   "general":{
+      "know_more":"Saber mais",
+      "view_movie":"Ver video",
+      "send":"enviar",
+      "footer":{
+         "access":"Acessibilidade",
+         "private":"Privacidade",
+         "faq":"Perguntas Frequentes",
+         "contacts":"Contacte-nos"
+      }
+   }
+}

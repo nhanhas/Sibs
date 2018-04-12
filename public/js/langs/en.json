@@ -1,0 +1,53 @@
+{  
+   "welcome":{  
+      "comercial":{  
+         "header":"multi",
+         "title":"important for your success",
+         "subtitle":"business"
+      },
+      "consumer":{  
+         "header":"multi",
+         "title":"useful for your day",
+         "subtitle":"private"
+      }
+   },
+   "comercial":{  
+      "principal":{  
+         "title_header":"One business, MULTI OPTIONS.",
+         "subtitle_header":"One form of payment for each moment.",
+         "text_header":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+         "section3_background":"Services",
+         "section3_title":"3 services at your service",
+         "section3_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+         "section4_text":"To ask any questions or to join our services, fill in the fields below. The partnership starts here.",
+         "section5_background":"Opinions",
+         "section5_title":"Multi Opinions",
+         "section5_text":"“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.”"
+      }
+   },
+   "consumer":{  
+      "principal":{  
+         "title_header":"Find the right solution for each type of business.",
+         "subtitle_header":"Because your business is unique.",
+         "temp":"Page under construction."
+      }
+   },
+   "sidebar":{  
+      "linkZero":"Home",
+      "linkOne":"MULTIBANCO Shop",
+      "linkTwo":"MULTIBANCO Go",
+      "linkThree":"MULTIBANCO Digital",
+      "linkFour":"Contact us"
+   },
+   "general":{
+      "know_more":"Know more",
+      "view_movie":"See video",
+      "send":"send",
+      "footer":{
+         "access":"Accessibility",
+         "private":"Privacy",
+         "faq":"Frequently Asked Questions",
+         "contacts":"Contact us"
+      }
+   }
+}

@@ -1,0 +1,430 @@
+/*** ANIMATIONS ***/
+/*** section 1 ***/
+/*** mobile1 ***/
+.fixe_mobile{
+	position: fixed !important;
+	bottom: auto !important;
+  top: -250px;
+}
+/*** section2 ***/
+.invis_text3{
+  top: -20% !important;
+  opacity: 0 !important;
+}
+/*** section3 ***/
+.section3_enter{
+	position: fixed !important;
+	top: 94% !important;
+}
+.section3_leave{
+	position: absolute !important;
+	top: 16% !important;
+}
+
+.move_horizontal_left{
+  left: 0 !important;
+  opacity: 1 !important;
+}
+.move_horizontal_right{
+  right: 0 !important;
+  opacity: 1 !important;
+}
+
+/*** search nav ***/
+#search_nav_digital *{
+  display: inline-block;
+}
+#search_nav_digital{
+  float: right;
+  position: absolute;
+  right: 78px;
+  top: 3px;
+}
+#search_nav_digital .input_container{
+  width: 208px;
+  margin-right: 10px;
+  top: 10px;
+  position: relative;
+}
+#search_nav_digital .search{
+  width: 0%;
+  float: right;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  margin: 0;
+  font-family: Raleway-light, sans-serif;
+  padding: 0 0 10px 0px;
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#search_nav_digital .targetSearch_input{
+  cursor: pointer;
+}
+#search_nav_digital input::placeholder, #search_nav_digital textarea::placeholder {
+  color: #ffffff;
+}
+
+/*** search ***/
+#search_digital *{
+  display: inline-block;
+}
+#search_digital{
+  float: right;
+  position: absolute;
+  right: 111px;
+  top: -4px;
+}
+#search_digital .input_container{
+  width: 208px;
+  margin-right: 10px;
+  top: 17px;
+  position: relative;
+}
+#search_digital .search{
+  width: 0%;
+  float: right;
+  border: none;
+  border-bottom: 1px solid #396fb9;
+  color: #396fb9;
+  margin: 0;
+  font-family: Raleway-light, sans-serif;
+  padding: 0 0 10px 0px;
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#search_digital .targetSearch_input{
+  cursor: pointer;
+}
+#search_digital input::placeholder, #search_digital textarea::placeholder {
+  color: #396fb9;
+}
+
+/*** mobile ***/
+.show_mouse{
+    position: absolute;
+    width: 262px;
+    height: 436px;
+    background-image: url(../images/mouse.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*** PAGE ***/
+/*** section1 ***/
+#welcome_com{
+	position: absolute;
+	width: 93%;
+	height: 90%;
+	top: 50%;
+	bottom:auto;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	margin: 0 auto;
+}
+#slide_welcome{
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	background-image: url(../images/digital_welcome.png);
+}
+.go_container{
+    width: 60%;
+    top: 45%;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.go_container h1{
+    font-size: 48px;
+    font-family: Raleway-SemiBold, sans-serif;
+    color: #ffffff;
+    line-height: 50px;
+}
+.go_container p{
+    margin-top: 19px;
+    font-size: 33px;
+    font-family: Raleway-Light, sans-serif;
+    line-height: 18px;
+	color: #ffffff;
+}
+.target_line{
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 5px;
+  height: 35%;
+}
+.target_line .point{
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-bottom: 11px;
+}
+.target_line .line{
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  background-color: #ffffff;
+}
+/*** section2 ***/
+#section2{
+	text-align: center;
+    padding-top: 22%;
+    position: relative;
+}
+#section2 .section_container{
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+  top: 0;
+  -webkit-transition: top 0.3s, opacity 0.3s;
+  -moz-transition: top 0.3s, opacity 0.3s;
+  transition: top 0.3s, opacity 0.3s;
+}
+#section2 .section_container h1{
+	color: #3a75c4;
+	font-family: Raleway-SemiBold, sans-serif;
+	font-size: 48px;
+}
+#section2 .section_container h2{
+	color: #3a75c4;
+	font-family: Raleway-Light, sans-serif;
+    margin-top: 10px;
+}
+#section2 .section_container p{
+	font-family: Raleway-Light, sans-serif;
+    margin-top: 17px;
+    line-height: 19px;
+}
+#section2 .logos_container{
+    width: 70%;
+    margin: 62px auto 0 auto;
+}
+.logos{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+.logos .hover{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+.logos .logo_container img{
+  vertical-align: top;
+}
+.logo1{
+  width: 50%;
+  height: 28px;
+  float: left;
+}
+.logo1 .logo_container{
+  width: 131px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.logo1:hover .hover{
+  display: block;
+}
+.logo2{
+  width: 50%;
+	height: 28px;
+	float: right;
+  padding: 0 0 0 10%;
+}
+.logo2 .logo_container{
+  width: 57px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.logo2:hover .hover{
+  display: block;
+}
+.logo3{
+  width: 50%;
+	height: 20px;
+  padding: 0 10% 0 0;
+	float: left;
+}
+.logo3 .logo_container{
+  width: 62px;
+  margin: 0 auto;
+  height: 100%;
+  margin: 7px 0px 0 0px;
+  position: relative;
+}
+.logo3 .hover{
+  padding: 0 10% 0 0;
+}
+.logo3:hover .hover{
+  display: block;
+}
+.logo4{
+  width: 50%;
+	height: 28px;
+	float: right;
+}
+.logo4 .logo_container{
+  width: 152px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.logo4:hover .hover{
+  display: block;
+}
+
+/*** section3 ***/
+/*** mobile ***/
+#section3{
+    background-color: #ffffff;
+	position: relative;
+	text-align: center;
+}
+#section3 .section_container{
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+	top: 21%;
+}
+#section3 h1{
+    font-size: 50px;
+	color: #3a75c4;
+	font-family: Raleway-SemiBold, sans-serif;
+}
+#section3 p{
+	color: #3a75c4;
+    font-size: 14px;
+    line-height: 18px;
+	font-family: Raleway-Light, sans-serif;
+    margin-top: 22px;
+    margin-top: 14px;
+}
+#section3 .background_text{
+	font-size: 12vw;
+	font-family: Raleway-SemiBold, sans-serif;
+    color: rgba(0, 0, 0, 0.05);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -6%;
+}
+#section3 .advantages_container{
+	margin-top: 16%;
+}
+.advantage_container_left{
+	padding: 0 180px 0 7%;
+  margin-top: 40px;
+  vertical-align: middle;
+  left: -60px;
+  opacity: 0;
+  -webkit-transition: left 0.3s, opacity 0.3s;
+  -moz-transition: left 0.3s, opacity 0.3s;
+  transition: left 0.3s, opacity 0.3s;
+}
+.advantage_container_right{
+	padding: 0 7% 0 168px;
+  margin-top: 40px;
+  vertical-align: middle;
+  right: -60px;
+  opacity: 0;
+  -webkit-transition: right 0.3s, opacity 0.3s;
+  -moz-transition: right 0.3s, opacity 0.3s;
+  transition: right 0.3s, opacity 0.3s;
+}
+.advantages_container .line1{
+	height: 120px;
+}
+.advantages_container .line2{
+	height: 90px;
+}
+.advantages_container .line3, .advantages_container .line4{
+	height: 83px;
+}
+.advantage_container_left .adv_text_cont{
+	text-align: right;
+}
+.advantage_container_right .adv_text_cont{
+	text-align: left;
+}
+
+#section3 .adv_text_cont h2{
+	color: #3a75c4;
+    font-size: 20px;
+}
+#section3 .adv_text_cont p{
+	color: #333;
+    margin-top: 7px;
+    line-height: 18px;
+}
+#section3 .advantages_container .img_container{
+	padding: 0;
+    vertical-align: middle;
+    position: relative;
+    height: 100%;
+}
+
+/*** section4 ***/
+#section4 {
+  position: relative;
+  text-align: center;
+  background-image: none;
+  background-color: #f5f8fc;
+  padding-top: 11%;
+}
+
+/*** MEDIA QUERIES ***/
+@media screen and (max-height: 780px) {
+  #section3 {
+    height: auto !important;
+    padding-bottom: 150px;
+  }
+  #section3 .advantages_container{
+    margin-top: 19%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+	.show_mouse{
+	    width: 248px;
+	    height: 474px;
+	}
+	/*** section1 ***/
+	.go_container{
+	    width: 70%;
+	}
+	/*** section2 ***/
+	#section2{
+	    padding-top: 27%;
+	}
+  .logo3 .logo_container{
+    margin: 7px 0px 0 0px;
+  }
+	/*** section3 ***/
+	.advantage_container_left{
+		padding: 0 137px 0 7%;
+		margin-top: 30px;
+	}
+	.advantage_container_right{
+		padding: 0 7% 0 125px;
+		margin-top: 30px;
+	}
+}

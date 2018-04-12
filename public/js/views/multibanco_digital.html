@@ -1,0 +1,273 @@
+<div class="container-fluid big_container ng-cloak">
+	<nav class="nav_Bar" target-anim="animations.obj1" anim-on-scroll>
+		<div id="navBar" class="row no_margin">
+			<div id="nav_bar" class="col-xs-12 no_margin no_padding nav navbar-nav navBar">
+				<div class="login_container_nav">
+					<a href="javascript:void(0)"><div class="login_buttons login"><p>Login</p></div></a>
+					<a href="javascript:void(0)" ng-click="toSection('section_contacts' , $event)"><div class="login_buttons contacts"><p>Contacte-nos</p></div></a>
+				</div>
+				<div class="logo_section"><img id="logo_section" src="public/images/logo_section.png"></div>
+				<div id="search_digital">
+					<form method="" action="">
+						<div class="input_container">
+							<input class="search" placeholder="pesquisar">
+						</div>
+						<img class="targetSearch_input" src="public/images/find_nav.png" target-ele="#search_digital .search" open-on-click>
+					</form>
+				</div>
+				<span class="open_sideBar_menu" style="font-size:37px;cursor:pointer;
+				color: #3a75c4;margin-top:-5px; position: absolute; right: 3.7%;height: 48px;" ng-click="openNav()">&#9776;</span>
+			</div>
+		</div>
+	</nav>
+	<section id="section1" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover1">
+		<div class="menu_sections">
+			<ul class="nav flex-column">
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover1}">
+			    <a ng-click="toSection('section1', $event)" ng-class="{'active_sidebar_li': scrolledover1, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section1" class="nav-link" href=""></a>
+			    <p>MULTIBANCO Digital</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover2}">
+			    <a ng-click="toSection('section2' , $event)" ng-class="{'active_sidebar_li': scrolledover2, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section2" class="nav-link" href=""></a>
+			    <p>Porquê?</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover3}">
+			    <a ng-click="toSection('section3' , $event)" ng-class="{'active_sidebar_li_excp': scrolledover3}" data-activelink="section3" class="nav-link" href=""></a>
+			    <p>Vantagens</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover4}">
+			    <a ng-click="toSection('section4' , $event)" ng-class="{'active_sidebar_li': scrolledover4, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section4" class="nav-link" href=""></a>
+			    <p></p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover5}">
+			    <a ng-click="toSection('section_contacts', $event)" ng-class="{'active_sidebar_li': scrolledover5, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section5" class="nav-link" href=""></a>
+			    <p>Contacte-nos</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover6}">
+			    <a ng-click="toSection('section_testimonials', $event)" ng-class="{'active_sidebar_li': scrolledover6, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section6" class="nav-link" href=""></a>
+			    <p>Opiniões</p>
+			  </li>
+			</ul>
+		</div>
+		<div id="mySidenav_Digital" class="sidenav sideBar_menu">
+			<img class="background_sideBar" src="public/images/background_sideBarMenu.png" factor-number="1" resize-height resize-width>
+			<div class="sidenav_container">
+				<p class="identity">MULTIBANCO Digital</p>
+				<h2>Todos MULTIBANCO, todos ligados</h2>
+				<a id="closebtn" href="javascript:void(0)" ng-click="closeNav()">&times;</a>
+				<a href="#/comercial">{{ 'sidebar.linkZero' | translate }}</a>
+			  	<a href="#/multibanco_shop">{{ 'sidebar.linkOne' | translate }}</a>
+			  	<a href="#/multibanco_go">{{ 'sidebar.linkTwo' | translate }}</a>
+			  	<a href="#/multibanco_digital">{{ 'sidebar.linkThree' | translate }}</a>
+			  	<a href="" ng-click="toSection('section_contacts', $event)">{{ 'sidebar.linkFour' | translate }}</a>
+			  	<div class="branch_cont">
+		  			<div class="single_bullet"></div>
+		  			<a class="link_branch" href="#/consumer"><p class="change_branch">Particulares</p></a>
+		  			<div class="single_bullet"></div>
+			  	</div>
+				<ul class="no_margin nav navbar-nav nav_lg_menu">
+					<li ng-click="changeLanguage('pt')"><a class="link_lang" target="_blank" href="">pt</a></li>
+					<li class="li_middle">|</li>
+					<li ng-click="changeLanguage('en')"><a class="link_lang" target="_blank" href="">en</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="welcome_com" class="row">
+			<div class="login_container">
+				<a href="javascript:void(0)"><div class="login_buttons login"><p>Login</p></div></a>
+				<a href="javascript:void(0)" ng-click="toSection('section_contacts' , $event)"><div class="login_buttons contacts"><p>Contacte-nos</p></div></a>
+			</div>
+			<div class="logo"></div>
+			<div id="slide_welcome" class="col-xs-12" factor-number="0.9" resize-height>
+				<div id="search_nav_digital" class="search_container">
+					<form method="" action="">
+						<div class="input_container">
+							<input class="search" placeholder="pesquisar">
+						</div>
+						<img class="targetSearch_input" src="public/images/find.png" target-ele="#search_nav_digital .search" open-on-click>
+					</form>
+				</div>
+				<span class="open_sideBar_menu" style="font-size:37px;cursor:pointer;float:right;
+		color: #ffffff;margin-top:3px; margin-right:4px;" ng-click="openNav()">&#9776;</span>
+			</div>
+			<div class="target_line">
+				<div class="point"></div>
+				<div class="line"></div>
+			</div>
+		</div>
+		<div class="go_container">
+			<h1>MULTIBANCO Digital</h1>
+			<p>Lorem ipsum dolor sit amet consecteteur.</p>
+		</div>
+	</section>
+	<section id="section2" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover2">
+		<div class="section_container" target-anim="animations.obj4" anim-on-scroll>
+			<div class="row no_margin">
+				<div class="col-xs-12">
+					<h1>Porquê MULTIBANCO Digital?</h1>
+					<h2>Porque lorem ipsum dolor sit amet </h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+			</div>
+			<div class="row no_margin logos_container">
+				<div class="col-md-6 no_padding">
+					<div class="logos logo1">
+						<div class="logo_container">
+							<img src="public/images/MB_GO_logo1.png">
+							<img class="hover" src="public/images/MB_GO_logo1_hover.png">
+						</div>
+					</div>
+					<div class="logos logo2">
+						<div class="logo_container">
+							<img src="public/images/MB_GO_logo2.png">
+							<img class="hover" src="public/images/MB_GO_logo2_hover.png">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 no_padding">
+					<div class="logos logo3">
+						<div class="logo_container">
+							<img src="public/images/MB_GO_logo3.png">
+							<img class="hover" src="public/images/MB_GO_logo3_hover.png">
+						</div>
+					</div>
+					<div class="logos logo4">
+						<div class="logo_container">
+							<img src="public/images/MB_GO_logo4.png">
+							<img class="hover" src="public/images/MB_GO_logo4_hover.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section3" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover3">
+		<div id="mobile" class="show_mouse" target-anim="animations.obj_mobile1" anim-mobile></div>
+		<p class="background_text" target-anim="animations.obj2" anim-on-scroll>Vantagens</p>
+		<div class="section_container">
+			<h1>Vantagens</h1>
+			<p>A solução que se adapta a qualquer negócio</p>
+		</div>
+		<div class="row no_margin advantages_container">
+			<div class="col-md-6 advantage_container_left line1" target-anim="animations.obj_hor4" anim-on-scroll>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Meios de Pagamento</h2>
+					<p>Integrador universal dos meios de pagamento nacionais (MULTIBANCO, Referencias,  Multibanco e MBWAY) e internacionais (Visa, Master Card e American Express).</p>
+				</div>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_advDigital1.png">
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_right line1" target-anim="animations.obj_hor5" anim-on-scroll>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_advDigital2.png">
+				</div>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Monitorização de Fraude</h2>
+					<p>Solução integrada 24x7, que analisa e monitoriza em real time as situações potencialmente fraudulentas, atuando sobre todos os dados da compra online.</p>
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_left line2" target-anim="animations.obj_hor6" anim-on-scroll>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Omni-Channel</h2>
+					<p>Todos os seus pagamentos on-line e off-line (venda assistida) geridos numa única plataforma.</p>
+				</div>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_advDigital3.png">
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_right line2" target-anim="animations.obj_hor7" anim-on-scroll>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_advDigital4.png">
+				</div>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Plug-ins</h2>
+					<p>Para integrar com o shopping cart ou sistema de e-commerce.</p>
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_left line3" target-anim="animations.obj_hor8" anim-on-scroll>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Tokerização</h2>
+					<p>O foco é o seu negócio, nós gerimos os dados sensíveis de pagamento e registamos os mesmos para futuras compras, oferecendo aos seus clientes uma experiência one-click shopping.</p>
+				</div>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_advDigital5.png">
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_right line3" target-anim="animations.obj_hor9" anim-on-scroll>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_advDigital6.png">
+				</div>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Reporting</h2>
+					<p>Ferramentas integradas de reporting que permite identificar padrões e comportamentos de consumo dos clientes.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section4" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover4">
+	</section>
+	<section id="section_contacts" active-on-scroll scrolledoover="scrolledover5">
+		<div class="section_container">
+			<div class="row no_margin">
+				<div class="text_container col-xs-12">
+					<h1>{{ 'sidebar.linkFour' | translate }}</h1>
+					<p>{{ 'comercial.principal.section4_text' | translate }}</p>
+				</div>
+			</div>
+			<form>
+				<div class="row no_margin">
+					<div class="text_container col-xs-12 no_padding companies">
+						<h2>Dados da Empresa</h2>
+						<div class="row no_margin row_container">
+							<div id="inpCont1" class="col-md-4 no_padding input_container">
+								<input type="text" class="" name="" placeholder="Empresa">
+							</div>
+							<div class="col-md-8 no_padding">
+								<input type="text" class="" name="" placeholder="Morada Empresa">
+							</div>
+						</div>
+						<div class="row no_margin row_container">
+							<div class="col-md-3 no_padding">
+								<input type="text" class="" name="" placeholder="Código Postal">
+							</div>
+							<div id="inpCont4" class="col-md-6 no_padding">
+								<input type="text" class="" name="" placeholder="Localidade">
+							</div>
+							<div class="col-md-3 no_padding">
+								<input type="text" class="" name="" placeholder="NIF/NIPC">
+							</div>
+						</div>
+						<div class="row no_margin row_container">
+							<div id="inpCont6" class="col-md-6 no_padding">
+								<input type="text" class="" name="" placeholder="Website">
+							</div>
+							<div id="inpCont7" class="col-md-6 no_padding">
+								<select>
+										<option name="">Tipo de Negócio</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row no_margin row_container">
+					<div class="col-md-6 no_padding contacts">
+						<h2>Dados de Contacto</h2>
+						<input type="text" class="" name="" placeholder="Nome Completo">
+						<input type="email" class="" name="" placeholder="Email">
+						<input type="text" class="" name="" placeholder="Telf./Telm.">
+					</div>
+					<div class="col-md-6 no_padding observations">
+						<h2>Assuntos/Observações</h2>
+						<textarea class="" name="" placeholder="Mensagem"></textarea>
+					</div>
+				</div>
+				<button class="hvr-sweep-to-top send_button" type="submit">{{ 'general.send' | translate }}</button>
+			</form>
+		</div>
+	</section>
+	<section id="section_testimonials" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover6">
+    	<footer ng-include="'public/js/includes/footer.html'"></footer>
+	</section>
+</div>
+</div>

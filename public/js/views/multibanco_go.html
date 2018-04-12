@@ -1,0 +1,569 @@
+<div class="container-fluid big_container ng-cloak">
+	<nav class="nav_Bar" target-anim="animations.obj1" anim-on-scroll>
+		<div id="navBar" class="row no_margin">
+			<div id="nav_bar" class="col-xs-12 no_margin no_padding nav navbar-nav navBar">
+				<div class="login_container_nav">
+					<a href="javascript:void(0)"><div class="login_buttons login"><p>Login</p></div></a>
+					<a href="javascript:void(0)" ng-click="toSection('section_contacts' , $event)"><div class="login_buttons contacts"><p>Contacte-nos</p></div></a>
+				</div>
+				<div class="logo_section"><img id="logo_section" src="public/images/logo_section.png"></div>
+				<div id="search_go">
+					<form method="" action="">
+						<div class="input_container">
+							<input class="search" placeholder="pesquisar">
+						</div>
+						<img class="targetSearch_input" src="public/images/find_nav.png" target-ele="#search_go .search" open-on-click>
+					</form>
+				</div>
+				<span class="open_sideBar_menu" style="font-size:37px;cursor:pointer;
+				color: #3a75c4;margin-top:-5px; position: absolute; right: 3.7%;height: 48px;" ng-click="openNav()">&#9776;</span>
+			</div>
+		</div>
+	</nav>
+	<section id="section1" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover1">
+		<div class="menu_sections">
+			<ul class="nav flex-column">
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover1}">
+			    <a ng-click="toSection('section1', $event)" ng-class="{'active_sidebar_li': scrolledover1, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section1" class="nav-link" href=""></a>
+			    <p>MULTIBANCO Go</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover2}">
+			    <a ng-click="toSection('section2' , $event)" ng-class="{'active_sidebar_li': scrolledover2, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section2" class="nav-link" href=""></a>
+			    <p>Porquê?</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover3}">
+			    <a ng-click="toSection('section3' , $event)" ng-class="{'active_sidebar_li_excp': scrolledover3}" data-activelink="section3" class="nav-link" href=""></a>
+			    <p>Vantagens</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover4}">
+			    <a ng-click="toSection('section4' , $event)" ng-class="{'active_sidebar_li': scrolledover4, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section4" class="nav-link" href=""></a>
+			    <p>A quem?</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover5}">
+			    <a ng-click="toSection('section_contacts', $event)" ng-class="{'active_sidebar_li': scrolledover5, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section5" class="nav-link" href=""></a>
+			    <p>Contacte-nos</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover6}">
+			    <a ng-click="toSection('section_testimonials', $event)" ng-class="{'active_sidebar_li': scrolledover6, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section6" class="nav-link" href=""></a>
+			    <p>Opiniões</p>
+			  </li>
+			</ul>
+		</div>
+		<div id="mySidenav_Go" class="sidenav sideBar_menu">
+			<img class="background_sideBar" src="public/images/background_sideBarMenu.png" factor-number="1" resize-height resize-width>
+			<div class="sidenav_container">
+				<p class="identity">MULTIBANCO Go</p>
+				<h2>Todos MULTIBANCO, todos ligados</h2>
+				<a id="closebtn" href="javascript:void(0)" ng-click="closeNav()">&times;</a>
+				<a href="#/comercial">{{ 'sidebar.linkZero' | translate }}</a>
+			  	<a href="#/multibanco_shop">{{ 'sidebar.linkOne' | translate }}</a>
+			  	<a href="#/multibanco_go">{{ 'sidebar.linkTwo' | translate }}</a>
+			  	<a href="#/multibanco_digital">{{ 'sidebar.linkThree' | translate }}</a>
+			  	<a href="" ng-click="toSection('section_contacts', $event)">{{ 'sidebar.linkFour' | translate }}</a>
+			  	<div class="branch_cont">
+		  			<div class="single_bullet"></div>
+		  			<a class="link_branch" href="#/consumer"><p class="change_branch">Particulares</p></a>
+		  			<div class="single_bullet"></div>
+			  	</div>
+				<ul class="no_margin nav navbar-nav nav_lg_menu">
+					<li ng-click="changeLanguage('pt')"><a class="link_lang" target="_blank" href="">pt</a></li>
+					<li class="li_middle">|</li>
+					<li ng-click="changeLanguage('en')"><a class="link_lang" target="_blank" href="">en</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="welcome_com" class="row">
+			<div class="login_container">
+				<a href="javascript:void(0)"><div class="login_buttons login"><p>Login</p></div></a>
+				<a href="javascript:void(0)" ng-click="toSection('section_contacts' , $event)"><div class="login_buttons contacts"><p>Contacte-nos</p></div></a>
+			</div>
+			<div class="logo"></div>
+			<div id="slide_welcome" class="col-xs-12" factor-number="0.9" resize-height>
+				<div id="search_nav_go" class="search_container">
+					<form method="" action="">
+						<div class="input_container">
+							<input class="search" placeholder="pesquisar">
+						</div>
+						<img class="targetSearch_input" src="public/images/find.png" target-ele="#search_nav_go .search" open-on-click>
+					</form>
+				</div>
+				<span class="open_sideBar_menu" style="font-size:37px;cursor:pointer;float:right;
+		color: #ffffff;margin-top:3px; margin-right:4px;" ng-click="openNav()">&#9776;</span>
+			</div>
+			<div class="target_line">
+				<div class="point"></div>
+				<div class="line"></div>
+			</div>
+		</div>
+		<div class="go_container">
+			<h1>MULTIBANCO Go</h1>
+			<p>Uma solução de pagamento na palma da mão.</p>
+		</div>
+		<div id="mobile_phone" class="show_mobile_phone"></div>
+	</section>
+	<section id="section2" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover2">
+		<div class="section_container" target-anim="animations.obj4" anim-on-scroll>
+			<div class="row no_margin">
+				<div class="col-xs-12">
+					<h1>Porquê MULTIBANCO Go?</h1>
+					<h2>Porque simplifica a vida a si e aos seus clientes</h2>
+					<p>O mundo está cada vez mais móvel. Por isso, há que criar soluções que acompanhem esta realidade. E o MULTIBANCO Go é uma delas. Com esta aplicação para smartphone e tablet, mais um leitor de cartões de débito e crédito, pode receber pagamentos em qualquer lugar. Deste modo, não lhe escapará negócio algum.</p>
+				</div>
+			</div>
+			<div class="row no_margin logos_container">
+				<div class="col-md-6 no_padding">
+					<div class="logos logo1">
+						<div class="logo_container">
+							<img src="public/images/MB_GO_logo1.png">
+							<img class="hover" src="public/images/MB_GO_logo1_hover.png">
+						</div>
+					</div>
+					<div class="logos logo2">
+						<div class="logo_container">
+							<img src="public/images/MB_GO_logo2.png">
+							<img class="hover" src="public/images/MB_GO_logo2_hover.png">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 no_padding">
+					<div class="logos logo3">
+						<div class="logo_container">
+							<img src="public/images/MB_GO_logo3.png">
+							<img class="hover" src="public/images/MB_GO_logo3_hover.png">
+						</div>
+					</div>
+					<div class="logos logo4">
+						<div class="logo_container">
+							<img src="public/images/MB_GO_logo4.png">
+							<img class="hover" src="public/images/MB_GO_logo4_hover.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section3" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover3">
+		<div id="mobile" class="show_mobile" target-anim="animations.obj_mobile1" anim-mobile></div>
+		<p class="background_text" target-anim="animations.obj2" anim-on-scroll>Vantagens</p>
+		<div class="section_container">
+			<h1>Vantagens</h1>
+			<p>Um pequeno dispositivo com grandes vantagens</p>
+		</div>
+		<div class="row no_margin advantages_container">
+			<div class="col-md-6 advantage_container_left line1" target-anim="animations.obj_hor4" anim-on-scroll>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Sem despesas mensais fixas</h2>
+					<p>Oferece benefícios financeiros com um tarifário sem complexidades.</p>
+				</div>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_adv1.png">
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_right line1" target-anim="animations.obj_hor5" anim-on-scroll>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_adv2.png">
+				</div>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Contactless</h2>
+					<p>A forma mais rápida para os clientes pagarem.</p>
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_left line2" target-anim="animations.obj_hor6" anim-on-scroll>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Mobilidade</h2>
+					<p>Equipamento mais leve, wireless e com maior autonomia de bateria que um TPA. Elimina o tempo de filas de espera e aumenta a taxa de conversão de venda.</p>
+				</div>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_adv3.png">
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_right line2" target-anim="animations.obj_hor7" anim-on-scroll>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_adv4.png">
+				</div>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Gestão em tempo real</h2>
+					<p>Visibilidade em tempo real através de gestão de acessos à APP e consulta de gestão de pagamentos (confirmação e devolução) via Backoffice.</p>
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_left line3" target-anim="animations.obj_hor8" anim-on-scroll>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Rede de Pagamento</h2>
+					<p>Aceita todas as marcas de cartão nacionais e internacionais – MULTIBANCO, Visa, MasterCard e o MBWAY.</p>
+				</div>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_adv5.png">
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_right line3" target-anim="animations.obj_hor9" anim-on-scroll>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_adv6.png">
+				</div>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Reporting</h2>
+					<p>Gestão das vendas através das ferramentas integradas de reporting disponíveis no Backoffice.</p>
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_left line4" target-anim="animations.obj_hor10" anim-on-scroll>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Segurança</h2>
+					<p>Garantimos a segurança dos dados sensíveis dos clientes. Somos certificados PCI e pelas marcas internacionais.</p>
+				</div>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_adv7.png">
+				</div>
+			</div>
+			<div class="col-md-6 advantage_container_right line4" target-anim="animations.obj_hor11" anim-on-scroll>
+				<div class="col-xs-2 img_container">
+					<img src="public/images/icon_adv8.png">
+				</div>
+				<div class="col-xs-10 adv_text_cont">
+					<h2>Sustentabilidade Ambiental</h2>
+					<p>Comprovativos de pagamento por e-mail permite reduzir custos com a impressão de recibos.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row no_margin advantages_container_mobile">
+			<div id="carousel-advantages" class="carousel slide" data-ride="carousel" factor-number="0.8" resize-height>
+	            <!-- Indicators -->
+	            <ol class="carousel-indicators my_indicators_test_com">
+	                <li data-target="#carousel-advantages" class="my_indicators_test_com_li active" data-slide-to="0"></li>
+	                <li data-target="#carousel-advantages" class="my_indicators_test_com_li" data-slide-to="1"></li>
+	                <li data-target="#carousel-advantages" class="my_indicators_test_com_li" data-slide-to="2"></li>
+	                <li data-target="#carousel-advantages" class="my_indicators_test_com_li" data-slide-to="3"></li>
+	                <li data-target="#carousel-advantages" class="my_indicators_test_com_li" data-slide-to="4"></li>
+	                <li data-target="#carousel-advantages" class="my_indicators_test_com_li" data-slide-to="5"></li>
+	                <li data-target="#carousel-advantages" class="my_indicators_test_com_li" data-slide-to="6"></li>
+	                <li data-target="#carousel-advantages" class="my_indicators_test_com_li" data-slide-to="7"></li>
+	            </ol>
+
+	            <!-- Left and right controls -->
+	        	<div class="arrow_controls_generic">
+	        		<a class="left carousel-control" href="#carousel-advantages" data-slide="prev" target="_self">
+					    <div class="slide_buttons slide_left hvr-sweep-to-top" ng-mouseover="itemsrcslideleft = 'public/images/left_slide_hover.png'" ng-mouseout="itemsrcslideleft='public/images/left_slide.png'"><img ng-src="{{itemsrcslideleft}}"></div>
+					</a>
+					<a class="right carousel-control" href="#carousel-advantages" data-slide="next" target="_self">
+					    <div class="slide_buttons slide_right hvr-sweep-to-top" ng-mouseover="itemsrcslideright = 'public/images/right_slide_hover.png'" ng-mouseout="itemsrcslideright='public/images/right_slide.png'"><img ng-src="{{itemsrcslideright}}"></div>
+					</a>
+	        	</div>
+
+	            <!-- Wrapper for slides -->
+	            <div class="carousel-inner top-slider slide_wrapper_container">
+	                <div class="item active slide_wrapper">
+	                	<div class="slide_container row no_margin">
+	                		<div class="img_container col-xs-12">
+								<img src="public/images/icon_adv1.png">
+							</div>
+							<div class="txt_container col-xs-12">
+								<h2>Sem despesas mensais fixas</h2>
+								<p>Oferece benefícios financeiros com um tarifário sem complexidades.</p>
+							</div>
+						</div>
+	                </div>
+	                <div class="item slide_wrapper">
+	                	<div class="slide_container row no_margin">
+	                		<div class="img_container col-xs-12">
+								<img src="public/images/icon_adv2.png">
+							</div>
+							<div class="txt_container col-xs-12">
+								<h2>Contactless</h2>
+								<p>A forma mais rápida para os clientes pagarem.</p>
+							</div>
+						</div>
+	                </div>
+	                <div class="item slide_wrapper">
+	                	<div class="slide_container row no_margin">
+	                		<div class="img_container col-xs-12">
+								<img src="public/images/icon_adv3.png">
+							</div>
+							<div class="txt_container col-xs-12">
+								<h2>Mobilidade</h2>
+								<p>Equipamento mais leve, wireless e com maior autonomia de bateria que um TPA. Elimina o tempo de filas de espera e aumenta a taxa de conversão de venda.</p>
+							</div>
+						</div>
+	                </div>
+	                <div class="item slide_wrapper">
+	                	<div class="slide_container row no_margin">
+	                		<div class="img_container col-xs-12">
+								<img src="public/images/icon_adv4.png">
+							</div>
+							<div class="txt_container col-xs-12">
+								<h2>Gestão em tempo real</h2>
+								<p>Visibilidade em tempo real através de gestão de acessos à APP e consulta de gestão de pagamentos (confirmação e devolução) via Backoffice.</p>
+							</div>
+						</div>
+	                </div>
+	                <div class="item slide_wrapper">
+	                	<div class="slide_container row no_margin">
+	                		<div class="img_container col-xs-12">
+								<img src="public/images/icon_adv5.png">
+							</div>
+							<div class="txt_container col-xs-12">
+								<h2>Rede de Pagamento</h2>
+								<p>Aceita todas as marcas de cartão nacionais e internacionais – MULTIBANCO, Visa, MasterCard e o MBWAY.</p>
+							</div>
+						</div>
+	                </div>
+	                <div class="item slide_wrapper">
+	                	<div class="slide_container row no_margin">
+	                		<div class="img_container col-xs-12">
+								<img src="public/images/icon_adv6.png">
+							</div>
+							<div class="txt_container col-xs-12">
+								<h2>Reporting</h2>
+								<p>Gestão das vendas através das ferramentas integradas de reporting disponíveis no Backoffice.</p>
+							</div>
+						</div>
+	                </div>
+	                <div class="item slide_wrapper">
+	                	<div class="slide_container row no_margin">
+	                		<div class="img_container col-xs-12">
+								<img src="public/images/icon_adv7.png">
+							</div>
+							<div class="txt_container col-xs-12">
+								<h2>Segurança</h2>
+								<p>Garantimos a segurança dos dados sensíveis dos clientes. Somos certificados PCI e pelas marcas internacionais.</p>
+							</div>
+						</div>
+	                </div>
+	                <div class="item slide_wrapper">
+	                	<div class="slide_container row no_margin">
+	                		<div class="img_container col-xs-12">
+								<img src="public/images/icon_adv8.png">
+							</div>
+							<div class="txt_container col-xs-12">
+								<h2>Sustentabilidade Ambiental</h2>
+								<p>Comprovativos de pagamento por e-mail permite reduzir custos com a impressão de recibos.</p>
+							</div>
+						</div>
+	                </div>
+	        	</div>
+	    	</div>
+		</div>
+	</section>
+	<section id="section4" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover4">
+		<div class="section_container">
+			<h1>A quem se destina?</h1>
+			<div class="animations_container row no_margin">
+				<div class="col-xs-6 anim_left no_padding">
+					<video id="v1" width="101%" height="auto" target-anim="animations.obj_video1" target-sib="#v2" anim-video>
+					    <source type="video/mp4" src="public/videos/anim_esq_430x156_entrada.mp4"></source>
+					    <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+					</video>
+					<video id="v2" width="101%" height="auto" loop autoplay>
+					    <source type="video/mp4" src="public/videos/anim_esq_430x156_hover.mp4"></source>
+					    <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+					</video>
+				</div>
+				<div class="col-xs-6 anim_right no_padding">
+					<video id="v3" width="101%" height="auto" target-anim="animations.obj_video1" target-sib="#v4" anim-video>
+					    <source type="video/mp4" src="public/videos/anim_dt_430x156_entrada.mp4"></source>
+					    <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+					</video>
+					<video id="v4" width="101%" height="auto" loop autoplay>
+					    <source type="video/mp4" src="public/videos/anim_dt_430x156_hover.mp4"></source>
+					    <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+					</video>
+				</div>
+			</div>
+
+			<div class="subtitles_container row no_margin">
+				<div class="sub_left col-xs-6 no_padding">
+					<h2>Negócios</h2>
+					<p>Serviço ideal para comerciantes com Entregas ao Domicilio, Profissionais por conta própria e Comércio ambulante.</p>
+				</div>
+				<div class="sub_right col-xs-6 no_padding">
+					<h2>Grandes Negócios</h2>
+					<p>Este serviço destina-se a comerciantes com Entregas ao Domicilio, Lojas com longas filas e eventos com mobilidade reduzida.</p>
+				</div>
+			</div>
+			<div class="ilustrations_container row no_margin">
+				<div class="il_left col-xs-6 no_padding">
+					<h2>Oferta</h2>
+					<h3>App MULTIBANCO Go</h3>
+					<div class="il_img_container">
+						<div class="row no_margin">
+							<div class="il_left_img col-xs-5 no_padding">
+								<img src="public/images/il_img1.png">
+							</div>
+							<div class="il_middle_img col-xs-2 no_padding">
+								<img src="public/images/il_img2.png">
+							</div>
+							<div class="il_right_img col-xs-5 no_padding">
+								<img src="public/images/il_img3.png">
+							</div>
+						</div>
+					</div>
+					<p>Leitor de Cartoes - Conetividade - Backoffice</p>
+				</div>
+				<div class="il_right col-xs-6 no_padding">
+					<h2>Oferta</h2>
+					<h3>SDK integrado na API do comerciante</h3>
+					<div class="il_img_container">
+						<div class="row no_margin">
+							<div class="il_left_img col-xs-5 no_padding">
+								<img src="public/images/il_img4.png">
+							</div>
+							<div class="il_middle_img col-xs-2 no_padding">
+								<img src="public/images/il_img2.png">
+							</div>
+							<div class="il_right_img col-xs-5 no_padding">
+								<img src="public/images/il_img5.png">
+							</div>
+						</div>
+					</div>
+					<p>Backoffice - Conetividade - Leitor de Cartoes</p>
+				</div>
+				<button class="hvr-sweep-to-top want_to_join">Quero Aderir</button>
+			</div>
+		</div>
+		<div class="section_container_mobile">
+			<h1>A quem se destina?</h1>
+			<div class="choosewho_buttons_container">
+				<div class="gcom_button" ng-click="chooseCompanie('small')" ng-class="{'selected_com': smallCom}">Pequenos Comerciantes</div>
+				<div class="pcom_button" ng-click="chooseCompanie('big')" ng-class="{'selected_com': bigCom}">Grandes Comerciantes</div>
+			</div>
+			<div class="gcom_content" ng-class="{'visible': smallCom}">
+				<div class="animation_container row no_margin">
+					<!-- <video id="v1" width="101%" height="auto" target-anim="animations.obj_video1" target-sib="#v2" anim-video>
+					    <source type="video/mp4" src="public/videos/anim_esq_430x156_entrada.mp4"></source>
+					    <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+					</video>
+					<video id="v2" width="101%" height="auto" loop autoplay>
+					    <source type="video/mp4" src="public/videos/anim_esq_430x156_hover.mp4"></source>
+					    <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+					</video>
+ -->				</div>
+				<div class="subtitle_container row no_margin">
+					<div class="col-xs-12 no_padding">
+						<h2>Negócios</h2>
+						<p>Serviço ideal para comerciantes com Entregas ao Domicilio, Profissionais por conta própria e Comércio ambulante.</p>
+					</div>
+				</div>
+				<div class="ilustration_container row no_margin">
+					<div class="col-xs-12 no_padding">
+						<h2>Oferta</h2>
+						<h3>App MULTIBANCO Go</h3>
+						<div class="il_img_container">
+							<div class="row no_margin">
+								<div class="il_left_img col-xs-5 no_padding">
+									<img src="public/images/il_img1.png">
+								</div>
+								<div class="il_middle_img col-xs-2 no_padding">
+									<img src="public/images/il_img2.png">
+								</div>
+								<div class="il_right_img col-xs-5 no_padding">
+									<img src="public/images/il_img3.png">
+								</div>
+							</div>
+						</div>
+						<p>Leitor de Cartoes - Conetividade - Backoffice</p>
+					</div>
+				</div>
+				<button class="hvr-sweep-to-top want_to_join">Quero Aderir</button>
+			</div>
+			<div class="pcom_content" ng-class="{'visible': bigCom}">
+				<div class="animation_container row no_margin">
+					<!-- <video id="v3" width="101%" height="auto" target-anim="animations.obj_video1" target-sib="#v4" anim-video>
+					    <source type="video/mp4" src="public/videos/anim_dt_430x156_entrada.mp4"></source>
+					    <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+					</video>
+					<video id="v4" width="101%" height="auto" loop autoplay>
+					    <source type="video/mp4" src="public/videos/anim_dt_430x156_hover.mp4"></source>
+					    <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
+					</video> -->
+				</div>
+				<div class="subtitle_container row no_margin">
+					<div class="col-xs-12 no_padding">
+						<h2>Grandes Negócios</h2>
+						<p>Este serviço destina-se a comerciantes com Entregas ao Domicilio, Lojas com longas filas e eventos com mobilidade reduzida.</p>
+					</div>
+				</div>
+				<div class="ilustration_container row no_margin">
+					<div class="col-xs-12 no_padding">
+						<h2>Oferta</h2>
+						<h3>SDK integrado na API do comerciante</h3>
+						<div class="il_img_container">
+							<div class="row no_margin">
+								<div class="il_left_img col-xs-5 no_padding">
+									<img src="public/images/il_img4.png">
+								</div>
+								<div class="il_middle_img col-xs-2 no_padding">
+									<img src="public/images/il_img2.png">
+								</div>
+								<div class="il_right_img col-xs-5 no_padding">
+									<img src="public/images/il_img5.png">
+								</div>
+							</div>
+						</div>
+						<p>Backoffice - Conetividade - Leitor de Cartoes</p>
+					</div>
+				</div>
+				<button class="hvr-sweep-to-top want_to_join">Quero Aderir</button>
+			</div>
+		</div>
+	</section>
+	<section id="section_contacts" active-on-scroll scrolledoover="scrolledover5">
+		<div class="section_container">
+			<div class="row no_margin">
+				<div class="text_container col-xs-12">
+					<h1>{{ 'sidebar.linkFour' | translate }}</h1>
+					<p>{{ 'comercial.principal.section4_text' | translate }}</p>
+				</div>
+			</div>
+			<form>
+				<div class="row no_margin">
+					<div class="text_container col-xs-12 no_padding companies">
+						<h2>Dados da Empresa</h2>
+						<div class="row no_margin row_container">
+							<div id="inpCont1" class="col-md-4 no_padding input_container">
+								<input type="text" class="" name="" placeholder="Empresa">
+							</div>
+							<div class="col-md-8 no_padding">
+								<input type="text" class="" name="" placeholder="Morada Empresa">
+							</div>
+						</div>
+						<div class="row no_margin row_container">
+							<div class="col-md-3 no_padding">
+								<input type="text" class="" name="" placeholder="Código Postal">
+							</div>
+							<div id="inpCont4" class="col-md-6 no_padding">
+								<input type="text" class="" name="" placeholder="Localidade">
+							</div>
+							<div class="col-md-3 no_padding">
+								<input type="text" class="" name="" placeholder="NIF/NIPC">
+							</div>
+						</div>
+						<div class="row no_margin row_container">
+							<div id="inpCont6" class="col-md-6 no_padding">
+								<input type="text" class="" name="" placeholder="Website">
+							</div>
+							<div id="inpCont7" class="col-md-6 no_padding">
+								<select>
+										<option name="">Tipo de Negócio</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row no_margin row_container">
+					<div class="col-md-6 no_padding contacts">
+						<h2>Dados de Contacto</h2>
+						<input type="text" class="" name="" placeholder="Nome Completo">
+						<input type="email" class="" name="" placeholder="Email">
+						<input type="text" class="" name="" placeholder="Telf./Telm.">
+					</div>
+					<div class="col-md-6 no_padding observations">
+						<h2>Assuntos/Observações</h2>
+						<textarea class="" name="" placeholder="Mensagem"></textarea>
+					</div>
+				</div>
+				<button class="hvr-sweep-to-top send_button" type="submit">{{ 'general.send' | translate }}</button>
+			</form>
+		</div>
+	</section>
+	<section id="section_testimonials" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover6">
+    	<footer ng-include="'public/js/includes/footer.html'"></footer>
+	</section>
+</div>
+</div>

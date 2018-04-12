@@ -1,0 +1,512 @@
+<div class="container-fluid big_container ng-cloak">
+	<nav class="nav_Bar" target-anim="animations.obj1" anim-on-scroll>
+		<div id="navBar" class="row no_margin">
+			<div id="nav_bar" class="col-xs-12 no_margin no_padding nav navbar-nav navBar">
+				<div class="login_container_nav">
+					<a href="javascript:void(0)"><div class="login_buttons login"><p>Login</p></div></a>
+					<a href="javascript:void(0)" ng-click="toSection('section_contacts' , $event)"><div class="login_buttons contacts"><p>Contacte-nos</p></div></a>
+				</div>
+				<div class="logo_section"><img id="logo_section" src="public/images/logo_section.png"></div>
+				<div id="search_con">
+					<form method="" action="">
+						<div class="input_container">
+							<input class="search" placeholder="pesquisar">
+						</div>
+						<img class="targetSearch_input" src="public/images/find_nav.png" target-ele="#search_con .search" open-on-click>
+					</form>
+				</div>
+				<span class="open_sideBar_menu" style="font-size:37px;cursor:pointer;
+				color: #3a75c4;margin-top:-5px; position: absolute; right: 3.7%;height: 48px;" ng-click="openNav()">&#9776;</span>
+			</div>
+		</div>
+	</nav>
+	<section id="section1" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover1">
+		<div class="menu_sections">
+			<ul class="nav flex-column">
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover1}">
+			    <a ng-click="toSection('section1', $event)" ng-class="{'active_sidebar_li': scrolledover1, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section1" class="nav-link" href=""></a>
+			    <p>MB Particulares</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover2}">
+			    <a ng-click="toSection('section2' , $event)" ng-class="{'active_sidebar_li': scrolledover2, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section2" class="nav-link" href=""></a>
+			    <p>Operações</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover3}">
+			    <a ng-click="toSection('section3' , $event)" ng-class="{'active_sidebar_li_excp': scrolledover3}" data-activelink="section3" class="nav-link" href=""></a>
+			    <p>Dia a dia</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover4}">
+			    <a ng-click="toSection('section4' , $event)" ng-class="{'active_sidebar_li': scrolledover4, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section4" class="nav-link" href=""></a>
+			    <p>Multiserviços</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover5}">
+			    <a ng-click="toSection('section5' , $event)" ng-class="{'active_sidebar_li': scrolledover2, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section2" class="nav-link" href=""></a>
+			    <p>Onde</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover6}">
+			    <a ng-click="toSection('section6' , $event)" ng-class="{'active_sidebar_li_excp': scrolledover3}" data-activelink="section3" class="nav-link" href=""></a>
+			    <p>Segurança</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover7}">
+			    <a ng-click="toSection('section7' , $event)" ng-class="{'active_sidebar_li': scrolledover4, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section4" class="nav-link" href=""></a>
+			    <p>Estatísticas</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover8}">
+			    <a ng-click="toSection('section_contacts', $event)" ng-class="{'active_sidebar_li': scrolledover5, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section5" class="nav-link" href=""></a>
+			    <p>Contacte-nos</p>
+			  </li>
+			  <li class="nav-item sec_link" ng-class="{'active_breadcumbs': scrolledover9}">
+			    <a ng-click="toSection('section_testimonials', $event)" ng-class="{'active_sidebar_li': scrolledover6, 'active_sidebar_excp_others' : scrolledover3}" data-activelink="section6" class="nav-link" href=""></a>
+			    <p>Opiniões</p>
+			  </li>
+			</ul>
+		</div>
+		<div id="mySidenav_con" class="sidenav sideBar_menu">
+			<img class="background_sideBar" src="public/images/background_sideBarMenu.png" factor-number="1" resize-height resize-width>
+			<div class="sidenav_container">
+				<p class="identity">Particulares</p>
+				<h2>Todos MULTIBANCO, todos ligados</h2>
+				<a id="closebtn" href="javascript:void(0)" ng-click="closeNav()">&times;</a>
+				<a href="#/consumer">{{ 'sidebar.linkZero' | translate }}</a>
+			  	<a href="">Link 1</a>
+			  	<a href="">Link 2</a>
+			  	<a href="">Link 3</a>
+			  	<a href="" ng-click="toSection('section_contacts', $event)">{{ 'sidebar.linkFour' | translate }}</a>
+			  	<div class="branch_cont">
+		  			<div class="single_bullet"></div>
+		  			<a class="link_branch" href="#/comercial"><p class="change_branch">Negociantes</p></a>
+		  			<div class="single_bullet"></div>
+			  	</div>
+				<ul class="no_margin nav navbar-nav nav_lg_menu">
+					<li ng-click="changeLanguage('pt')"><a class="link_lang" target="_blank" href="">pt</a></li>
+					<li class="li_middle">|</li>
+					<li ng-click="changeLanguage('en')"><a class="link_lang" target="_blank" href="">en</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="welcome_con" class="row">
+			<div class="login_container">
+				<a href="javascript:void(0)"><div class="login_buttons login"><p>Login</p></div></a>
+				<a href="javascript:void(0)" ng-click="toSection('section_contacts' , $event)"><div class="login_buttons contacts"><p>Contacte-nos</p></div></a>
+			</div>
+			<div class="logo"></div>
+			<div id="slide_welcome" class="col-xs-12" factor-number="0.9" resize-height>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" factor-number="0.9" resize-height>
+
+	                <!-- Wrapper for slides -->
+	                <div class="carousel-inner top-slider slide_wrapper_container">
+	                    <div id="first_crousel_slide" class="item active slide_wrapper"></div>
+	                    <div id="second_crousel_slide" class="item slide_wrapper"></div>
+	                    <div id="third_crousel_slide" class="item slide_wrapper"></div>
+	            	</div>
+
+	            	<!-- Left and right controls -->
+	            	<div class="arrow_controls">
+	            		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev" target="_self">
+						    <div class="slide_buttons slide_left hvr-sweep-to-top" ng-mouseover="itemsrcslideleft = 'public/images/left_slide_hover.png'" ng-mouseout="itemsrcslideleft='public/images/left_slide.png'"><img ng-src="{{itemsrcslideleft}}"></div>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" data-slide="next" target="_self">
+						    <div class="slide_buttons slide_right hvr-sweep-to-top" ng-mouseover="itemsrcslideright = 'public/images/right_slide_hover.png'" ng-mouseout="itemsrcslideright='public/images/right_slide.png'"><img ng-src="{{itemsrcslideright}}"></div>
+						</a>
+	            	</div>
+	        	</div>
+	        	<div id="search_con_nav">
+					<form method="" action="">
+						<div class="input_container">
+							<input class="search" placeholder="pesquisar">
+						</div>
+						<img class="targetSearch_input" src="public/images/find.png" target-ele="#search_con_nav .search" open-on-click>
+					</form>
+				</div>
+				<span class="open_sideBar_menu" style="font-size:37px;cursor:pointer;
+		color: #ffffff;position: absolute; top: 3px; right: 22px;" ng-click="openNav()">&#9776;</span>
+			</div>
+			<div class="target_line">
+				<div class="point"></div>
+				<div class="line"></div>
+			</div>
+		</div>
+		<div class="con_container" target-anim="animations.obj5" anim-on-scroll>
+			<div class="counting_container" target-anim="animations.obj0" anim-on-scroll>
+				<div class="counting">
+					<div class="numbers">
+						<p updates-per-sec="10" counter>0</p>
+					</div>
+				</div>
+				<p>Operações na rede MULTIBANCO</p>
+			</div>
+			<h1 target-anim="animations.obj2" anim-on-scroll>Se o MULTIBANCO não faz, provavelmente mais ninguém faz!</h1>
+			<button class="hvr-sweep-to-top-invert see_movie_button" target-anim="animations.obj_seemovie" anim-on-scroll>{{ 'general.view_movie' | translate }}</button>
+			<p target-anim="animations.obj4" anim-on-scroll>Entre o MULTIBANCO e os portugueses há uma relação de cumplicidade, confiança e orgulho absolutamente mútuos. Nos últimos 30 anos temos crescido juntos, temos aprendido a conhecer-nos um ao outro, e o “verde, código, verde”, já é um clássico de várias gerações. E assim queremos que continue. Por isso, continuamos a acrescentar serviços aos serviços que já proporcionamos, apresentando-nos cada vez mais como o ATM mais completo do mundo.</p>
+		</div>
+	</section>
+	<section id="section2" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover2">
+		
+	</section>
+	<section id="section3" active-on-scroll scrolledoover="scrolledover3">
+		<p class="background_text" target-anim="animations.obj6" anim-on-scroll>Dia a dia</p>
+		<div class="section_container">
+			<h1>O MULTIBANCO no dia a dia dos portugueses</h1>
+		</div>
+		<div class="pages_container row">
+			<div class="col-md-4 page_container left">
+				<div class="txt_container tc1">
+					<div class="images">
+						<img src="public/images/money_icon.png">
+					</div>
+					<h2>On the way to work</h2>
+					<p>he pays the tolls <span style="color:#3a75c4;">with a card without inputting PIN code</span></p>
+				</div>
+				<div class="txt_container tc3">
+					<div class="images">
+						<img src="public/images/metro_icon.png">
+						<img src="public/images/card_icon.png">
+					</div>
+					<h2>He takes the subway</h2>
+					<p>After parking the car, he takes the subway and <span style="color:#3a75c4;">pays with Pay-as-you-go.</span></p>
+				</div>
+				<div class="txt_container tc5">
+					<div class="images">
+						<img src="public/images/mbway_icon.png">
+						<img src="public/images/transfers_icon.png">
+					</div>
+					<h2>Lunch time</h2>
+					<p>At lunch time, he goes to a restaurant with a colleague who pays the entire bill. He then <span style="color:#3a75c4;">does an instant transfer</span> to his colleague to pay for his share.</p>
+				</div>
+			</div>
+			<div class="col-md-4 page_container">
+				<div class="road_img_container"></div>
+			</div>
+			<div class="col-md-4 page_container right">
+				<div class="txt_container tc2">
+					<h2>Leaves home</h2>
+					<p>Leaves home in the morning</p>
+				</div>
+				<div class="txt_container tc4">
+					<div class="images">
+						<img src="public/images/viaverde_icon.png">
+					</div>
+					<h2>Arriving to the city,</h2>
+					<p>he leaves his car in a public park and <span style="color:#3a75c4;">pays with Via Verde.</span></p>
+				</div>
+				<div class="txt_container tc6">
+					<div class="images">
+						<img src="public/images/atm_icon.png">
+					</div>
+					<h2>He stops at the ATM</h2>
+					<p>Before entering his workplace, he stops at the ATM to <span style="color:#3a75c4;">pay his electricity bill through Invoice Payments.</span></p>
+				</div>
+				<div class="txt_container tc8">
+					<div class="images">
+						<img src="public/images/mbmachine_icon.png">
+						<img src="public/images/mblogo_icon.png">
+					</div>
+					<h2>By the end of the day</h2>
+					<p>he goes to the supermarket and <span style="color:#3a75c4;">pays with his regular card.</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section4" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover4">
+		<p class="background_text" target-anim="animations.obj8" anim-on-scroll>Serviços</p>
+		<div class="section_container">
+			<h1>MULTIBANCO, Multiserviços</h1>
+			<p>O MULTIBANCO tem uma lista crescente de serviços. Porque o seu propósito é simplificar a vida de todos nós, tornando rápido o que era lento e fácil o que era difícil. Por isso, se qualquer dia puder, por exemplo, encher o depósito do seu carro numa das nossas caixas, não se espante. Nós gostamos de trabalhar para o surpreender.</p>
+		</div>
+		<div class="row partitions_container no_margin">
+			<div class="partitions">
+				<div class="partitions_labels row no_margin">
+					<div class="col-md-4 labels" ng-click="chooseService('partition1')" ng-class="{'selected': partition1}">As operações mais usadas</div>
+					<div class="col-md-4 labels" ng-click="chooseService('partition2')" ng-class="{'selected': partition2}">Mais operações</div>
+					<div class="col-md-4 labels" ng-click="chooseService('partition3')" ng-class="{'selected': partition3}">E ainda...</div>
+				</div>
+				<div class="partitions_contents">
+					<div class="partitions_content partition_content_1 row no_margin" ng-class="{'visible': partition1}">
+						<div class="col-md-4">
+							<img src="public/images/partition1.png">
+							<img src="public/images/partition4.png">
+						</div>
+						<div class="col-md-4">
+							<img src="public/images/partition2.png">
+							<img src="public/images/partition5.png">
+						</div>
+						<div class="col-md-4">
+							<img src="public/images/partition3.png">
+						</div>
+					</div>
+					<div class="partitions_content partition_content_2 row no_margin" ng-class="{'visible': partition2}">
+						<div class="col-md-4">
+							<img src="public/images/partition1.png">
+							<img src="public/images/partition4.png">
+						</div>
+						<div class="col-md-4">
+							<img src="public/images/partition2.png">
+						</div>
+						<div class="col-md-4">
+							<img src="public/images/partition3.png">
+						</div>
+					</div>
+					<div class="partitions_content partition_content_3 row no_margin" ng-class="{'visible': partition3}">
+						<div class="col-md-4">
+							<img src="public/images/partition1.png">
+						</div>
+						<div class="col-md-4">
+							<img src="public/images/partition2.png">
+							<img src="public/images/partition5.png">
+						</div>
+						<div class="col-md-4">
+							<img src="public/images/partition3.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section5" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover5">
+		<p class="background_text" target-anim="animations.obj9" anim-on-scroll>Onde</p>
+		<div class="section_container">
+			<h1>Onde encontrar um ATM</h1>
+		</div>
+		<div id="map_container" class="row no_margin">
+			<gm-map gm-map-id="'myMap'" gm-center="center" gm-zoom="zoom" gm-bounds="bounds" gm-map-type-id="mapTypeId" gm-map-options="options.map" class="googlemap col-xs-12" factor-number="0.7" resize-height>
+				<gm-markers gm-objects="multibancos"
+		                    gm-id="object.id"
+		                    gm-position="{lat: object.location.lat, lng: object.location.lng}"
+		                    gm-marker-options="getMultibancoOpts(object)"
+		                    gm-on-click="selectMultibanco(object, marker)">
+		        </gm-markers>
+			</gm-map>
+		</div>
+	</section>
+	<section id="section6" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover6">
+		<p class="background_text" target-anim="animations.obj10" anim-on-scroll>Segurança</p>
+		<div class="section_container">
+			<h1>Segurança</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="pages_container row">
+			<div id="page_shop" class="col-md-4 page_container" do-square>
+				<div class="vertical_line"></div>
+				<h2 class="page_container_title">Compras Online</h2>
+				<div class="page_container_hover">
+					<p class="page_container_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					<button class="exception_button hvr-sweep-to-top">{{ 'general.know_more' | translate }}</button>
+				</div>
+			</div>
+			<div id="page_mobile" class="col-md-4 page_container" do-square>
+				<div class="vertical_line"></div>
+				<h2 class="page_container_title">Compras em Loja</h2>
+				<div class="page_container_hover">
+					<p class="page_container_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					<button class="exception_button hvr-sweep-to-top">{{ 'general.know_more' | translate }}</button>
+				</div>
+			</div>
+			<div id="page_digital" class="col-md-4 page_container" do-square>
+				<div class="vertical_line"></div>
+				<h2 class="page_container_title">Utilização do Cartão</h2>
+				<div class="page_container_hover">
+					<p class="page_container_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					<button class="exception_button hvr-sweep-to-top">{{ 'general.know_more' | translate }}</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section7" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover7">
+		<p class="background_text" target-anim="animations.obj11" anim-on-scroll>Estatística</p>
+		<div class="section_container">
+			<h1>Estatísticas 2012-2017</h1>
+			<p>Conheça os mais recentes números sobre evolução dos levantamentos e compras na Rede MULTIBANCO nos últimos 5 anos.</p>
+			<h2>Evolução dos levantamentos e compras em lojas fisícas nos últimos 5 anos</h2>
+		</div>
+		<div id="carousel-grafs_com" class="carousel slide" data-ride="carousel" factor-number="1" resize-height>
+            <!-- Left and right controls -->
+        	<div class="arrow_controls_generic">
+        		<a class="left carousel-control" href="#carousel-grafs_com" data-slide="prev" target="_self">
+				    <div class="slide_buttons slide_left hvr-sweep-to-top" ng-mouseover="itemsrcslideleft = 'public/images/left_slide_hover.png'" ng-mouseout="itemsrcslideleft='public/images/left_slide.png'"><img ng-src="{{itemsrcslideleft}}"></div>
+				</a>
+				<a class="right carousel-control" href="#carousel-grafs_com" data-slide="next" target="_self">
+				    <div class="slide_buttons slide_right hvr-sweep-to-top" ng-mouseover="itemsrcslideright = 'public/images/right_slide_hover.png'" ng-mouseout="itemsrcslideright='public/images/right_slide.png'"><img ng-src="{{itemsrcslideright}}"></div>
+				</a>
+        	</div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner top-slider slide_wrapper_container slide_wrapper_container_grafs">
+                <div class="item active slide_wrapper">
+                	<div id="first_crousel_slide_section7" class="slide_container">
+                		<div class="bars">
+                			<div class="bar1 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2012</p>
+                			</div>
+                			<div class="bar2 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2013</p>
+                			</div>
+                			<div class="bar3 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2014</p>
+                			</div>
+                			<div class="bar4 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2015</p>
+                			</div>
+                			<div class="bar5 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2016</p>
+                			</div>
+                			<div class="bar6 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2017</p>
+                			</div>
+                		</div>
+                		<div class="label_series">
+                			<div class="labelA">
+                				<div class="labelBallA"></div>
+                				<p>Compras</p>
+                			</div>
+                			<div class="labelB">
+                				<div class="labelBallB"></div>
+                				<p>Levantamentos</p>
+                			</div>
+                		</div>
+                		<div class="label">
+                			Dezembro
+                		</div>
+                	</div>
+                </div>
+                <div class="item slide_wrapper">
+                	<div id="second_crousel_slide_section7" class="slide_container">
+                		<div class="bars">
+                			<div class="bar1 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2012</p>
+                			</div>
+                			<div class="bar2 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2013</p>
+                			</div>
+                			<div class="bar3 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2014</p>
+                			</div>
+                			<div class="bar4 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2015</p>
+                			</div>
+                			<div class="bar5 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2016</p>
+                			</div>
+                			<div class="bar6 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2017</p>
+                			</div>
+                		</div>
+                		<div class="label_series">
+                			<div class="labelA">
+                				<div class="labelBallA"></div>
+                				<p>Compras</p>
+                			</div>
+                			<div class="labelB">
+                				<div class="labelBallB"></div>
+                				<p>Levantamentos</p>
+                			</div>
+                		</div>
+                		<div class="label">
+                			Janeiro
+                		</div>
+                	</div>
+                </div>
+                <div class="item slide_wrapper">
+                	<div id="third_crousel_slide_section7" class="slide_container">
+                		<div class="bars">
+                			<div class="bar1 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2012</p>
+                			</div>
+                			<div class="bar2 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2013</p>
+                			</div>
+                			<div class="bar3 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2014</p>
+                			</div>
+                			<div class="bar4 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2015</p>
+                			</div>
+                			<div class="bar5 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2016</p>
+                			</div>
+                			<div class="bar6 bar">
+                				<div class="seriesA"></div>
+                				<div class="seriesB"></div>
+                				<p class="label_bars">2017</p>
+                			</div>
+                		</div>
+                		<div class="label_series">
+                			<div class="labelA">
+                				<div class="labelBallA"></div>
+                				<p>Compras</p>
+                			</div>
+                			<div class="labelB">
+                				<div class="labelBallB"></div>
+                				<p>Levantamentos</p>
+                			</div>
+                		</div>
+                		<div class="label">
+                			Fevereiro
+                		</div>
+                	</div>
+                </div>
+        	</div>
+    	</div>
+    	<button class="hvr-sweep-to-top mb_view">MB View</button>
+	</section>
+	<section id="section_contacts" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover8">
+		<div class="section_container">
+			<div class="row no_margin">
+				<div class="text_container col-xs-12">
+					<h1>Contacte-nos</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<form>
+				<div class="row no_margin row_container">
+					<div class="col-md-6 no_padding contacts">
+						<h2>Dados de Contacto</h2>
+						<input type="text" class="" name="" placeholder="Nome Completo">
+						<input type="email" class="" name="" placeholder="Email">
+						<input type="text" class="input_phone" name="" placeholder="Telf./Telm.">
+					</div>
+					<div class="col-md-6 no_padding observations">
+						<h2>Assuntos/Observações</h2>
+						<textarea class="" name="" placeholder="Mensagem"></textarea>
+					</div>
+				</div>
+				<button class="hvr-sweep-to-top send_button" type="submit">{{ 'general.send' | translate }}</button>
+			</form>
+		</div>
+	</section>
+	<section id="section_testimonials" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover9">
+    	<footer ng-include="'public/js/includes/footer.html'"></footer>
+	</section>
+</div>

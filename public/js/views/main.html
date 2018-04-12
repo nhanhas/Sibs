@@ -1,0 +1,32 @@
+<div class="container-fluid big_container ng-cloak" factor-number="1" resize-height>
+	<ul class="no_margin nav navbar-nav nav_lg">
+		<li ng-click="changeLanguage('pt')"><a href="" target="_blank">pt</a></li>
+		<li class="li_middle">|</li>
+		<li ng-click="changeLanguage('en')"><a href="" target="_blank">en</a></li>
+	</ul>
+	<div class="logo logo_main"></div>
+	<div id="welcome_entry" class="row">
+		<a ng-href="#/comercial"><div id="comerciante" class="col-md-6 entry_choice_container" factor-number-mobile="0.465" factor-number="0.9" resize-height>
+			<div class="com_container">
+				<div class="v_line"></div>
+				<!--<p>{{ 'welcome.comercial.subtitle' | translate }}</p>
+				<h2>{{ 'welcome.comercial.header' | translate }}</h2>
+				<h3>{{ 'welcome.comercial.title' | translate }}</h3>-->
+				<p>{{ pageContent.left_header}}</p>
+				<h2>{{ pageContent.left_title }}</h2>
+				<h3>{{ pageContent.left_subtitle }}</h3>
+			</div>
+		</div></a>
+		<a ng-href="#/consumer"><div id="consumidor" class="col-md-6 entry_choice_container" factor-number-mobile="0.465" factor-number="0.9" resize-height>
+			<div class="con_container">
+				<div class="v_line"></div>
+				<!--<p>{{ 'welcome.consumer.subtitle' | translate }}</p>
+				<h2>{{ 'welcome.consumer.header' | translate }}</h2>
+				<h3>{{ 'welcome.consumer.title' | translate }}</h3>-->
+				<p>{{ pageContent.right_header}}</p>
+				<h2>{{ pageContent.right_title }}</h2>
+				<h3>{{ pageContent.right_subtitle }}</h3>
+			</div>
+		</div></a>
+	</div>
+</div>
