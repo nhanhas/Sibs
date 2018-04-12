@@ -26,10 +26,21 @@ myControllers.controller('MainController', ['$scope', '$translate', 'WebService'
 
 }]);
 
-myControllers.controller('comercialController', ['$scope', '$translate', '$document', '$location', function myController($scope, $translate, $document, $location){
+myControllers.controller('comercialController', ['$scope', '$translate', '$document', '$location', 'WebService', function myController($scope, $translate, $document, $location, WebService){
+    //Dynamic content 
+    $scope.pageContent = undefined;
+
+    //Function to load content
+    $scope.loadContent = function(){
+        WebService.WP_getViewContent('productpage').then(function(result){
+            $scope.pageContent = result.data;
+        });
+    };
+
     /*** change lang ***/
 	$scope.changeLanguage = function (key){
-    	$translate.use(key);
+        $translate.use(key);
+        $scope.loadContent();
     }
     
     /*** open sidenav ***/
@@ -203,6 +214,10 @@ myControllers.controller('comercialController', ['$scope', '$translate', '$docum
             classLeave: 'sectionFooter_leave'
         }
     }
+
+    //Load Content
+    $scope.loadContent();
+
 }]);
 
 myControllers.controller('consumerController', ['$scope', '$translate', '$document', function myController($scope, $translate, $document, Map){

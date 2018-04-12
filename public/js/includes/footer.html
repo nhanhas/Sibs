@@ -1,4 +1,4 @@
-<p class="background_text" target-anim="animations.obj_footer" anim-on-scroll>{{ 'comercial.principal.section5_background' | translate }}</p>
+<p class="background_text" target-anim="animations.obj_footer" anim-on-scroll>{{pageContent.opinioes_titulo}}</p>
 <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" factor-number="0.6" resize-height>
 
     <!-- Left and right controls -->
@@ -13,41 +13,13 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner top-slider slide_wrapper_container">
-        <div class="item active slide_wrapper">
+        <div class="item slide_wrapper" ng-class="{'active' : pageContent.opinioes[0] === opinion}" ng-repeat="opinion in pageContent.opinioes">
         	<div class="section_container">
-				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
-				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
-				<p class="signature">Roberto Marques |  Jornal Expresso</p>
+				<h1>{{pageContent.opinioes_subtitulo}}</h1>
+				<p>{{opinion.conteudo}}</p>
+				<p class="signature">{{opinion.titulo}}</p>
 			</div>
-        </div>
-        <div class="item slide_wrapper">
-        	<div class="section_container">
-				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
-				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
-				<p class="signature">Roberto Marques |  Jornal Expresso</p>
-			</div>
-        </div>
-        <div class="item slide_wrapper">
-        	<div class="section_container">
-				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
-				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
-				<p class="signature">Roberto Marques |  Jornal Expresso</p>
-			</div>
-        </div>
-        <div class="item slide_wrapper">
-        	<div class="section_container">
-				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
-				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
-				<p class="signature">Roberto Marques |  Jornal Expresso</p>
-			</div>
-        </div>
-        <div class="item slide_wrapper">
-        	<div class="section_container">
-				<h1>{{ 'comercial.principal.section5_title' | translate }}</h1>
-				<p>{{ 'comercial.principal.section5_text' | translate }}</p>
-				<p class="signature">Roberto Marques |  Jornal Expresso</p>
-			</div>
-        </div>
+        </div>     
 	</div>
 </div>
 <div class="footer" factor-number="0.4" resize-height>
