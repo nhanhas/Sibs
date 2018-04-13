@@ -32,7 +32,7 @@ myControllers.controller('comercialController', ['$scope', '$translate', '$docum
 
     //Function to load content
     $scope.loadContent = function(){
-        WebService.WP_getViewContent('productpage').then(function(result){
+        WebService.WP_getViewContent('targetpage').then(function(result){
             $scope.pageContent = result.data;
         });
     };
@@ -969,11 +969,23 @@ myControllers.controller('multibancogoController', ['$scope', '$translate', '$do
     }
 }]);
 
-myControllers.controller('multibancoshopController', ['$scope', '$translate', '$document', '$window', '$location',function myController($scope, $translate, $document, $window, $location){
+myControllers.controller('multibancoshopController', ['$scope', '$translate', '$document', '$window', '$location', 'WebService', function myController($scope, $translate, $document, $window, $location, WebService){
+    //Dynamic content 
+    $scope.pageContent = undefined;
+
+    //Function to load content
+    $scope.loadContent = function(){
+        WebService.WP_getViewContent('product-page').then(function(result){
+            $scope.pageContent = result.data;
+        });
+    };
+
     /*** change lang ***/
     $scope.changeLanguage = function (key){
         $translate.use(key);
+        $scope.loadContent();
     }
+
 
     /*** open sidenav ***/
     var sidenav = angular.element('#mySidenav_Shop');
@@ -1124,6 +1136,10 @@ myControllers.controller('multibancoshopController', ['$scope', '$translate', '$
             classLeave: ''
         }
     }
+
+    //Load Content
+    $scope.loadContent();
+
 }]);
 
 myControllers.controller('multibancodigitalController', ['$scope', '$translate', '$document', '$window', '$location',function myController($scope, $translate, $document, $window, $location){

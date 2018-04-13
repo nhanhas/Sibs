@@ -72,13 +72,13 @@
 				</ul>
 			</div>
 		</div>
-		<div id="welcome_com" class="row">
+		<div id="welcome_com" class="row" ng-if="pageContent !== undefined">
 			<div class="login_container">
 				<a href="javascript:void(0)"><div class="login_buttons login"><p>Login</p></div></a>
 				<a href="javascript:void(0)" ng-click="toSection('section_contacts' , $event)"><div class="login_buttons contacts"><p>Contacte-nos</p></div></a>
 			</div>
-			<div class="logo"></div>
-			<div id="slide_welcome" class="col-xs-12" factor-number="0.9" resize-height>
+			<div class="logo" style="background-image: url({{pageContent.featured_image}})"></div>
+			<div id="slide_welcome" class="col-xs-12" factor-number="0.9" style="background-image: url({{pageContent.imagem_fundo_inicial}})" resize-height >
 				<div id="search_nav_shop" class="search_container">
 					<form method="" action="">
 						<div class="input_container">
@@ -96,17 +96,17 @@
 			</div>
 		</div>
 		<div class="go_container">
-			<h1>MULTIBANCO Shop</h1>
-			<p>Lorem ipsum dolor sit amet consecteteur.</p>
+			<h1>{{pageContent.titulo}}</h1>
+			<p>{{pageContent.subtitulo_inicial}}</p>
 		</div>
 	</section>
 	<section id="section2" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover2">
 		<div class="section_container" target-anim="animations.obj4" anim-on-scroll>
 			<div class="row no_margin">
 				<div class="col-xs-12">
-					<h1>Porquê MULTIBANCO Shop?</h1>
-					<h2>Porque lorem ipsum dolor sit amet </h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<h1>{{pageContent.titulo_pergunta}}</h1>
+					<h2>{{pageContent.subtitulo_pergunta}} </h2>
+					<p>{{pageContent.descricao_servico}}</p>
 				</div>
 			</div>
 			<div class="row no_margin logos_container">
@@ -142,67 +142,67 @@
 		</div>
 	</section>
 	<section id="section3" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover3">
-		<div id="mobile" class="show_machineMB" target-anim="animations.obj_mobile1" anim-mobile></div>
-		<p class="background_text" target-anim="animations.obj2" anim-on-scroll>Vantagens</p>
+		<div id="mobile" class="show_machineMB" target-anim="animations.obj_mobile1" anim-mobile style="background-image: url({{pageContent.imagem_deslizante}})"></div>
+		<p class="background_text" target-anim="animations.obj2" anim-on-scroll>{{pageContent.titulo_vantagens}}</p>
 		<div class="section_container">
-			<h1>Vantagens</h1>
-			<p>A solução que se adapta a qualquer negócio</p>
+			<h1>{{pageContent.titulo_vantagens}}</h1>
+			<p>{{pageContent.subtitulo_vantagens}}</p>
 		</div>
 		<div class="row no_margin advantages_container">
 			<div class="col-md-6 advantage_container_left line1" target-anim="animations.obj_hor4" anim-on-scroll>
 				<div class="col-xs-10 adv_text_cont">
-					<h2>Disponibilidade e Serviços de Suporte</h2>
-					<p>Garantimos a monitorização proactiva permanente do serviço e suporte ao negócio.</p>
+					<h2>{{pageContent.vantagens[0].titulo}}</h2>
+					<p>{{pageContent.vantagens[0].conteudo}}</p>
 				</div>
 				<div class="col-xs-2 img_container">
-					<img src="public/images/icon_advShop1.png">
+					<img src="{{pageContent.vantagens[0]._thumbnail_id}}">
 				</div>
 			</div>
 			<div class="col-md-6 advantage_container_right line1" target-anim="animations.obj_hor5" anim-on-scroll>
 				<div class="col-xs-2 img_container">
-					<img src="public/images/icon_advShop2.png">
+					<img src="{{pageContent.vantagens[1]._thumbnail_id}}">
 				</div>
 				<div class="col-xs-10 adv_text_cont">
-					<h2>Contactless</h2>
-					<p>A forma mais rápida para os clientes pagarem.</p>
+					<h2>{{pageContent.vantagens[1].titulo}}</h2>
+					<p>{{pageContent.vantagens[1].conteudo}}</p>
 				</div>
 			</div>
 			<div class="col-md-6 advantage_container_left line2" target-anim="animations.obj_hor6" anim-on-scroll>
 				<div class="col-xs-10 adv_text_cont">
-					<h2>Rede de Pagamento</h2>
-					<p>Aceita todas as marcas de cartão nacionais e internacionais – MULTIBANCO, Visa, MasterCard e o MBWAY.</p>
+					<h2>{{pageContent.vantagens[2].titulo}}</h2>
+					<p>{{pageContent.vantagens[2].conteudo}}</p>
 				</div>
 				<div class="col-xs-2 img_container">
-					<img src="public/images/icon_advShop3.png">
+					<img src="{{pageContent.vantagens[3]._thumbnail_id}}">
 				</div>
 			</div>
 			<div class="col-md-6 advantage_container_right line2" target-anim="animations.obj_hor7" anim-on-scroll>
 				<div class="col-xs-2 img_container">
-					<img src="public/images/icon_advShop4.png">
+					<img src="{{pageContent.vantagens[4]._thumbnail_id}}">
 				</div>
 				<div class="col-xs-10 adv_text_cont">
-					<h2>Conversão de moeda</h2>
-					<p>Aceita pagamentos da moeda origem dos cartões dos clientes e recebe em euros, com total transparência de serviço.</p>
+					<h2>{{pageContent.vantagens[4].titulo}}</h2>
+					<p>{{pageContent.vantagens[4].conteudo}}</p>
 				</div>
 			</div>
 			<div class="col-md-6 advantage_container_left line3" target-anim="animations.obj_hor8" anim-on-scroll>
 				<div class="col-xs-10 adv_text_cont">
-					<h2>Segurança</h2>
-					<p>Garantimos a segurança dos dados sensíveis dos clientes. Somos certificados PCI e pelas marcas internacionais.</p>
+					<h2>{{pageContent.vantagens[5].titulo}}</h2>
+					<p>{{pageContent.vantagens[5].conteudo}}</p>
 				</div>
 				<div class="col-xs-2 img_container">
-					<img src="public/images/icon_advShop5.png">
+					<img src="{{pageContent.vantagens[5]._thumbnail_id}}">
 				</div>
 			</div>
-			<div class="col-md-6 advantage_container_right line3" target-anim="animations.obj_hor9" anim-on-scroll>
+			<!--<div class="col-md-6 advantage_container_right line3" target-anim="animations.obj_hor9" anim-on-scroll>
 				<div class="col-xs-2 img_container">
-					<img src="public/images/icon_advShop6.png">
+					<img src="{{pageContent.vantagens[6]._thumbnail_id}}">
 				</div>
 				<div class="col-xs-10 adv_text_cont">
-					<h2>Reporting</h2>
-					<p>Gestão das vendas através das ferramentas integradas de reporting disponíveis no Backoffice.</p>
+					<h2>{{pageContent.vantagens[6].titulo}}</h2>
+					<p>{{pageContent.vantagens[6].conteudo}}</p>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</section>
 	<section id="section4" factor-number="1" resize-height active-on-scroll scrolledoover="scrolledover4">
